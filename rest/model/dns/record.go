@@ -25,7 +25,7 @@ type Record struct {
 	// Answers must all be of the same type as the record.
 	Answers []*Answer `json:"answers"`
 	// The records' filter chain.
-	Filters []*filter.Filter `json:"filters"`
+	Filters []*filter.Filter `json:"filters,omitempty"`
 	// The records' regions.
 	Regions data.Regions `json:"regions,omitempty"`
 
